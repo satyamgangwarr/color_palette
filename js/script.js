@@ -1,7 +1,7 @@
 const generateBtn = document.getElementById("generate-btn");
 const colorPalette = document.querySelector(".palette");
 
-generatePalette();
+window.onload = generatePalette();
 
 generateBtn.addEventListener("click", generatePalette);
 

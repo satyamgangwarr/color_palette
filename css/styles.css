@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body{
+    background: linear-gradient(120deg, #9FB4C7, #e9ecef);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 3px;
+    background-color: #7F7CAF;
+    border-radius: 2px;
+}
+
+#generate-btn{
+    background: linear-gradient(45deg, #7F7CAF, #9FB4C7);
+    color : white;
+    border: none;
+    padding : 0.5rem 1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+#generate-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#generate-btn:active{
+    transform: translateY(0);
+}
+
+.palette{
+    display: grid;
+    gap : 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+
+}
+
+.color-box{
+    border-radius : 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+
+}
+.color-box:hover{
+    transform: translateY(-5px);
+}
+
+.color{
+    height: 150px;
+}
+.color-name{
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .8rem;
+}
+
+.color-hex{
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+
+.copy-img{
+   cursor: pointer;
+   height: 20px;
+   width: 20px;
+}
+.copy-img:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width : 750px){
+    .palette-container{
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+}
+
+
+
+

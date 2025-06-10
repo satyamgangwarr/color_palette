@@ -110,6 +110,13 @@ h1::after{
     transform: scale(1.1);
 }
 
+@media (max-width : 750px){
+    .palette-container{
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+}
+
 
 
 
